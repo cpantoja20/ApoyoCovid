@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Parcial2\\datos\\Datos.csproj": {}
+    "D:\\Desktop\\Parcial2\\Datos\\Datos.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Parcial2\\datos\\Datos.csproj": {
+    "D:\\Desktop\\Parcial2\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Parcial2\\datos\\Datos.csproj",
+        "projectUniqueName": "D:\\Desktop\\Parcial2\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "D:\\Desktop\\Parcial2\\datos\\Datos.csproj",
+        "projectPath": "D:\\Desktop\\Parcial2\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\sindy\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Parcial2\\datos\\obj\\",
+        "outputPath": "D:\\Desktop\\Parcial2\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,11 +50,7 @@
             },
             "System.Collections": {
               "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

@@ -1,42 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using Entity;
-using Datos;
 using System.Linq;
-
-
-
+using Datos;
 
 namespace Logica
 {
-          public class PersonaService
+    public class PersonaService
     {
         private readonly ApoyoContext _context;
         public PersonaService(ApoyoContext context)
         {
             _context = context;
         }
-        
+
         public GuardarPersonaResponse Guardar(Persona persona)
         {
             try
             {
                 var personaAux = _context.Personas.Find(persona.Identificacion);
-                
+
                 if (personaAux != null)
                 {
                     return new GuardarPersonaResponse($"Error de la Aplicacion: La persona ya se encuentra registrada!");
-                }        
-                persona.CalcularApoyo();
-              _context.Personas.Add(persona);
-              _context.SaveChanges();
+                }
+               
+                _context.Personas.Add(persona);
+                _context.SaveChanges();
                 return new GuardarPersonaResponse(persona);
             }
             catch (Exception e)
             {
                 return new GuardarPersonaResponse($"Error de la Aplicacion: {e.Message}");
             }
-            finally { _context.Close(); }
+            
         }
         public List<Persona> ConsultarTodos()
         {
@@ -47,7 +44,6 @@ namespace Logica
         {
             try
             {
-                _context.Open();
                 var persona = _context.Personas.Find(identificacion);
                 if (persona != null)
                 {
@@ -64,7 +60,6 @@ namespace Logica
 
                 return $"Error de la Aplicación: {e.Message}";
             }
-            finally { _context.Close(); }
 
         }
         public Persona BuscarxIdentificacion(string identificacion)
@@ -76,11 +71,11 @@ namespace Logica
         {
             return _context.Personas.Count();
         }
-        
-       
+
+
     }
 
-    public class GuardarPersonaResponse 
+    public class GuardarPersonaResponse
     {
         public GuardarPersonaResponse(Persona persona)
         {
@@ -97,4 +92,4 @@ namespace Logica
         public Persona Persona { get; set; }
     }
 }
-    
+

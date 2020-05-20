@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Parcial2\\entity\\Entity.csproj": {}
+    "D:\\Desktop\\Parcial2\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Parcial2\\entity\\Entity.csproj": {
+    "D:\\Desktop\\Parcial2\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Parcial2\\entity\\Entity.csproj",
+        "projectUniqueName": "D:\\Desktop\\Parcial2\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "D:\\Desktop\\Parcial2\\entity\\Entity.csproj",
+        "projectPath": "D:\\Desktop\\Parcial2\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\sindy\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Parcial2\\entity\\obj\\",
+        "outputPath": "D:\\Desktop\\Parcial2\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
